@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculator</h1>
+    </header>
+    
+    <div class="calculator-container">
+        <div class="calculator">
+            <div class="display">
+                <div class="previous-operand" id="previousOperand"></div>
+                <div class="current-operand" id="currentOperand">0</div>
+            </div>
+            <div class="buttons">
+                <!-- First row -->
+                <button class="btn clear" data-action="clear">AC</button>
+                <button class="btn clear" data-action="delete">DEL</button>
+                <button class="btn operator" data-action="operator" data-operator="%">%</button>
+                <button class="btn operator" data-action="operator" data-operator="÷">÷</button>
+                
+                <!-- Second row -->
+                <button class="btn number" data-action="number" data-number="7">7</button>
+                <button class="btn number" data-action="number" data-number="8">8</button>
+                <button class="btn number" data-action="number" data-number="9">9</button>
+                <button class="btn operator" data-action="operator" data-operator="×">×</button>
+                
+                <!-- Third row -->
+                <button class="btn number" data-action="number" data-number="4">4</button>
+                <button class="btn number" data-action="number" data-number="5">5</button>
+                <button class="btn number" data-action="number" data-number="6">6</button>
+                <button class="btn operator" data-action="operator" data-operator="-">-</button>
+                
+                <!-- Fourth row -->
+                <button class="btn number" data-action="number" data-number="1">1</button>
+                <button class="btn number" data-action="number" data-number="2">2</button>
+                <button class="btn number" data-action="number" data-number="3">3</button>
+                <button class="btn operator" data-action="operator" data-operator="+">+</button>
+                
+                <!-- Fifth row -->
+                <button class="btn number zero" data-action="number" data-number="0">0</button>
+                <button class="btn number" data-action="decimal" data-decimal=".">.</button>
+                <button class="btn equals" data-action="calculate" id="equals">=</button>
+            </div>
+        </div>
+        <div class="error-message" id="errorMessage"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Calculator | All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
