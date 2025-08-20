@@ -1,5 +1,5 @@
 # SCT_WD_2 : Calculator Web Application
-SkillCraft - Web Development Internship Task 02
+SkillCraft Technology - Web Development Internship Task 02
 
 *A fully functional calculator built with JavaScript, featuring a modern green-blue design, Indian number system formatting, and comprehensive DOM manipulation techniques.*
 
